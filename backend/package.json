@@ -1,0 +1,17 @@
+{
+  "name": "prms-backend-sqlite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PRMS backend — Node.js + SQLite (node:sqlite, zero runtime dependencies)",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "db:init": "node --experimental-sqlite src/db/init.js",
+    "seed:users": "node --experimental-sqlite scripts/create_user.js",
+    "start": "node --experimental-sqlite src/server.js",
+    "dev": "node --experimental-sqlite --watch src/server.js",
+    "test": "node --experimental-sqlite --test tests/*.test.js"
+  }
+}

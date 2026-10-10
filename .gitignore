@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# SQLite database files (never commit data)
+*.db
+*.db-wal
+*.db-shm
+
+# Env / secrets
+.env
+*.local
+
+# OS
+.DS_Store
